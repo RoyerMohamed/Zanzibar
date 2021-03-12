@@ -1,0 +1,670 @@
+* {
+  margin: 0;
+  font-family: "Lato";
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body {
+  max-width: 100%;
+}
+
+.white {
+  color: #fff;
+}
+.blue-btn {
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  padding: 0 20px;
+  background-color: rgb(11, 166, 255);
+  color: #fff;
+  width: 200px;
+}
+.blue-btn:nth-child(1n) {
+  background-color: #fff;
+  color: rgb(11, 166, 255);
+  transition: 0.3s;
+}
+.blue-btn:nth-child(1n):hover {
+  background-color: rgb(11, 166, 255);
+  color: #fff;
+  transition: 0.3s;
+}
+.blue-btn:nth-child(2) {
+  background-color: transparent;
+  border: 1px solid #fff;
+  margin-left: 1em;
+  transition: 0.3s;
+  color: #fff;
+  width: 200px;
+}
+.blue-btn:nth-child(2):hover {
+  background-color: rgb(11, 166, 255);
+  color: #fff;
+  transition: 0.3s;
+  border: none;
+}
+.blue-btn-sejour {
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  padding: 0 20px;
+  background-color: rgb(11, 166, 255);
+  color: #fff;
+  width: 200px;
+  transition: 1s;
+}
+.blue-btn-sejour:hover {
+  background-color: rgb(2, 205, 219);
+  transition: 1s;
+}
+.blue-btn-contact {
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  padding: 0 20px;
+  background-color: rgb(11, 166, 255);
+  color: #fff;
+  width: 200px;
+  transition: 1s;
+}
+h2 {
+  font-size: 250%;
+  padding-top: 1em;
+}
+h2::after {
+  display: block;
+  height: 2px;
+  background-color: #05cdfe;
+  width: 100px;
+  content: " ";
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.underline-white::after {
+  background-color: #fff;
+}
+header {
+  background-color: black;
+  color: white;
+}
+.logo {
+  width: 100px;
+}
+header {
+  display: flex;
+  justify-content: space-around;
+}
+header > h1 {
+  font-family: "warnesregular";
+}
+nav > ul {
+  display: flex;
+}
+ul > li {
+  padding: 10px;
+  list-style: none;
+}
+li > a {
+  text-decoration: none;
+  color: white;
+}
+#beatch-section {
+  background-image: url(./images/header.jpg);
+  height: 100vh;
+  background-size: cover;
+  color: white;
+}
+.beatch-content {
+  display: flex;
+  flex-direction: column;
+  padding: 310px 200px;
+}
+.beatch-content-title {
+  font-size: 60px;
+  font-family: "warnes", "cursive";
+}
+.beatch-content-subtitle {
+  font-size: 60px;
+  /* fix font famaly  */
+}
+.beatch-content-btn {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+.beatch-content-btn1 {
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  padding: 0 20px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+.beatch-content-btn2 {
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  padding: 0 20px;
+  color: rgb(65, 193, 231);
+}
+
+.whoAreWe {
+  /* margin: 0 300px; */
+  text-align: center;
+  padding: 0 5em;
+}
+.whoAreWe-title {
+  font-size: 60px;
+  text-align: center;
+  padding: 2em 0;
+}
+.whoAreWe-content {
+  display: flex;
+  margin-top: 5em;
+}
+.whoAreWe-content-image {
+  background-image: url(./images/tea.png);
+  background-size: cover;
+  background-position: center;
+  width: 60%;
+  height: 500px;
+}
+.whoAreWe-content-side {
+  width: 40%;
+}
+.whoAreWe-content-side-list {
+  display: flex;
+  flex-direction: row-reverse;
+  text-align: left;
+  margin-bottom: 1em;
+}
+.icon {
+  color: red;
+  font-size: 2em;
+  padding: 0 1em;
+  transition: 1s;
+}
+.icon:hover {
+  transform: translateX(25px);
+  transition: 1s;
+  color: black;
+}
+.whoAreWe-content-side-list-text > span {
+  font-size: 2em;
+}
+.NotreIls {
+  background-color: rgb(11, 247, 255);
+  text-align: center;
+  padding: 1em 7em;
+}
+.NotreIls-container {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 1em 3em;
+}
+.NotreIls-title {
+  font-size: 60px;
+}
+.NotreIls-container > div {
+  width: 30%;
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 10px rgb(128, 128, 128);
+}
+.NotreIls-container > div > img {
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+}
+.NotreIls-container > div > p {
+  width: 80%;
+  margin: 0 auto;
+  text-align: left;
+  padding: 20px;
+}
+.NotreIls-container > div > span {
+  width: 50%;
+  color: tomato;
+  margin: 0 auto;
+}
+.galerie {
+  padding: 2em 5em;
+  text-align: center;
+}
+.galerie-title {
+  font-size: 60px;
+  padding: 2em 0;
+}
+.galerie-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.galerie-content-top {
+  display: flex;
+  height: 300px;
+  margin: 2em 0;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1800px;
+
+}
+.galerie-content-top > div:nth-child(1) {
+  background-image: url("./images/the-paysage.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 30vw;
+  border-radius: 10px;
+}
+.galerie-content-top > div:nth-child(2) {
+  background-image: url("./images/galerie/epices-zanzibar.jpg ");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 55vw;
+  border-radius: 10px;
+}
+
+.galerie-content-top > img:nth-child(1) {
+  width: 30%;
+  border-radius: 10px;
+  margin: 0 1%;
+}
+.galerie-content-top > img:nth-child(2) {
+  width: 70%;
+  border-radius: 10px;
+}
+.galerie-content-bottom {
+  display: flex;
+  height: 300px;
+  max-width: 1800px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.galerie-content-bottom > div:nth-child(1) {
+  background-image: url(./images/galerie/epices-zanzibar.jpg);
+  width: 30vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+
+}
+.galerie-content-bottom > div:nth-child(2) {
+  background-image: url(./images/galerie/village-pecheur-zanzibar.jpg);
+  width: 20vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+
+}
+.galerie-content-bottom > div:nth-child(3) {
+  background-image: url(./images/galerie/safari-blue.jpg);
+  width: 35vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+
+}
+.galerie-content-bottom > img {
+  border-radius: 10px;
+  margin: 0 1%;
+  height: 300px;
+  width: 50%;
+}
+.temoignages {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  text-align: center;
+  position: relative;
+  background-image: url(./images/the-paysage.jpg);
+  margin-top: 1em;
+}
+.temoignages > div {
+  padding: 0 15px;
+  min-height: 100vh;
+  background-color: rgba(11, 247, 255, 0.4);
+}
+.temoignages-title {
+  font-size: 60px;
+  color: white;
+}
+.temoignages-content {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 50vh;
+  flex-wrap: wrap;
+}
+.temoignages-content > div {
+  margin: auto;
+  text-align: left;
+  color: white;
+  width: 400px;
+}
+.temoignages-content > div > p > i {
+  font-size: 2em;
+}
+.temoignages-content-image {
+  display: flex;
+  margin: 20px 0;
+}
+.temoignages-content-image > img {
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 15px;
+}
+.temoignages-content-image > span {
+  margin-block: auto;
+}
+.sejour {
+  margin: 0 6em;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  border: 1px solid red;
+}
+.sejour-title {
+  font-size: 60px;
+  padding: 1em 0;
+}
+.sejour-content {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2em;
+  flex-wrap: wrap;
+}
+.sejour-content > div:nth-child(2) {
+  background-color: rgb(11, 247, 255);
+}
+.sejour-content-box {
+  box-shadow: 1px 0px 10px gray;
+  max-width: 350px;
+  border-radius: 10px;
+  min-height: 33%;
+}
+.sejour-content-box-top {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.199);
+  padding: 10px 1em;
+  box-shadow: 1px 0px 10px rgba(128, 128, 128, 0.199);
+}
+.s1 {
+  font-size: 25px;
+}
+.s2 {
+  font-size: 25px;
+}
+.sejour-content-box-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sejour-content-box-text {
+  padding: 0;
+  text-align: left;
+}
+.sejour-content-box-text > ul {
+  padding: 20px 10px;
+}
+.contact {
+  display: flex;
+  margin: 1em 6em;
+  flex-wrap: wrap;
+}
+.contact-map {
+  width: 40vw;
+}
+.contact > div {
+  margin-top: 2em;
+  width: 100%;
+}
+.contact-form {
+  margin: 0 1em;
+  max-width: 40vw;
+}
+.contact-form > div:nth-child(1) {
+  text-align: center;
+  margin-bottom: 1em;
+}
+.contact-form > div:nth-child(2) {
+  font-size: 13px;
+}
+.contact-form > div > ul {
+  display: flex;
+  padding: 0;
+}
+.contact-form > div > ul > li {
+  padding: 15px 10px;
+}
+.contact-title {
+  font-size: 60px;
+  margin: 0 auto;
+}
+.contact-form > form {
+  display: flex;
+  flex-wrap: wrap;
+}
+.form-textarea {
+  margin: 2em 0;
+  display: flex;
+  flex-direction: column;
+}
+footer {
+  text-align: center;
+  height: 100px;
+  color: rgba(255, 255, 255, 0.527);
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+
+  .galerie-content-bottom {
+    flex-wrap: wrap;
+  }
+  .galerie-content-top {
+    flex-wrap: wrap;
+  }
+  .galerie-content-bottom > div:nth-child(1) {
+    width: 100%;  
+  }.galerie-content-bottom > div:nth-child(2) {
+    width: 100%;  
+  }.galerie-content-bottom > div:nth-child(3) {
+    width: 100%;  
+  }
+  .galerie-content-top > div:nth-child(1) {
+    width: 100%;
+  }
+  .galerie-content-top > div:nth-child(2) {
+    width: 100%;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+  
+  .galerie-content-bottom > div:nth-child(1) {
+    width: 100%;  
+  }.galerie-content-bottom > div:nth-child(2) {
+    width: 100%;  
+  }.galerie-content-bottom > div:nth-child(3) {
+    width: 100%;  
+  }
+  .galerie-content-top > div:nth-child(1) {
+    width: 100%;
+  }
+  .galerie-content-top > div:nth-child(2) {
+    width: 100%;
+  }
+}
+@media (max-width: 1024) {
+  
+  .galerie-content-bottom > div:nth-child(1) {
+    width: 100%;  
+  }.galerie-content-bottom > div:nth-child(2) {
+    width: 100%;  
+  }.galerie-content-bottom > div:nth-child(3) {
+    width: 100%;  
+  }
+  .galerie-content-top > div:nth-child(1) {
+    width: 100%;
+  }
+  .galerie-content-top > div:nth-child(2) {
+    width: 100%;
+  }
+}
+
+
